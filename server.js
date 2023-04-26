@@ -3,6 +3,7 @@ const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
+
 // Ruta para el archivo HTML
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
